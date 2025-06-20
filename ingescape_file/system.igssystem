@@ -1,0 +1,426 @@
+{
+    "extensions": {
+        "eventsTimeline": {
+            "events": [
+            ],
+            "patterns": [
+            ],
+            "timelines": [
+                {
+                    "eventInstances": [
+                    ],
+                    "name": "Timeline_1",
+                    "order": 0,
+                    "patternInstances": [
+                    ]
+                }
+            ]
+        },
+        "recordAndReplay": {
+            "filters": {
+            }
+        }
+    },
+    "library": {
+        "classes": [
+            {
+                "className": "semaphore",
+                "color": 0,
+                "definition": {
+                    "inputs": [
+                        {
+                            "name": "motion_sensor",
+                            "type": "BOOL"
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "green",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "red",
+                            "type": "IMPULSION"
+                        }
+                    ]
+                },
+                "description": "",
+                "icon": -1,
+                "package": "semaphore",
+                "plugin": "ingescape_class",
+                "uuid": "83f2ac6e-8d40-4567-b161-a93fd8d88540",
+                "version": ""
+            },
+            {
+                "className": "Rover",
+                "color": 0,
+                "definition": {
+                    "inputs": [
+                        {
+                            "name": "forward",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "backward",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "stop",
+                            "type": "IMPULSION"
+                        },
+                        {
+                            "name": "right",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "left",
+                            "type": "INTEGER"
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "confirm_received",
+                            "type": "BOOL"
+                        },
+                        {
+                            "name": "output",
+                            "type": "STRING"
+                        }
+                    ]
+                },
+                "description": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Asap'; font-size:12px; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Mars Rover</p></body></html>",
+                "icon": -1,
+                "package": "",
+                "plugin": "ingescape_class",
+                "uuid": "ff82c988-01fd-488d-9d6e-ff150a149791",
+                "version": "1.0"
+            },
+            {
+                "className": "MotionSensor",
+                "color": 0,
+                "definition": {
+                },
+                "description": "",
+                "icon": -1,
+                "package": "MotionSensor",
+                "plugin": "ingescape_class",
+                "uuid": "ac4a50fb-5282-4178-b0be-44f6da0308fa",
+                "version": ""
+            },
+            {
+                "className": "Normalizer",
+                "color": 0,
+                "definition": {
+                    "inputs": [
+                        {
+                            "name": "mqtt_in",
+                            "type": "STRING"
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "motion",
+                            "type": "BOOL"
+                        }
+                    ]
+                },
+                "description": "",
+                "icon": -1,
+                "package": "MotionSensor",
+                "plugin": "ingescape_class",
+                "uuid": "54f0ece8-c4f0-44d5-b273-dc61bc631f9a",
+                "version": ""
+            },
+            {
+                "className": "Semaphore",
+                "color": 0,
+                "definition": {
+                    "inputs": [
+                        {
+                            "name": "motion_sensor",
+                            "type": "BOOL"
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "green",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "red",
+                            "type": "IMPULSION"
+                        }
+                    ]
+                },
+                "description": "",
+                "icon": -1,
+                "package": "Semaphore",
+                "plugin": "ingescape_class",
+                "uuid": "5ee566b1-e456-461a-bc4f-a1bc0f78a00a",
+                "version": ""
+            },
+            {
+                "className": "t_light",
+                "color": 0,
+                "definition": {
+                    "inputs": [
+                        {
+                            "name": "motion_sensor",
+                            "type": "BOOL"
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "green",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "red",
+                            "type": "INTEGER"
+                        }
+                    ]
+                },
+                "description": "",
+                "icon": -1,
+                "package": "",
+                "plugin": "ingescape_class",
+                "uuid": "84c4a1a9-8cfe-4790-b62e-b46b54bff14b",
+                "version": ""
+            },
+            {
+                "className": "traffic_light_rhapsody",
+                "color": 0,
+                "definition": {
+                },
+                "description": "",
+                "icon": -1,
+                "package": "",
+                "plugin": "ingescape_class",
+                "uuid": "1a450e25-3b2c-4097-9f47-aa074d5b5eca",
+                "version": ""
+            },
+            {
+                "className": "t_light_cameo",
+                "color": 0,
+                "definition": {
+                    "inputs": [
+                        {
+                            "name": "motion_sensor",
+                            "type": "BOOL"
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "green",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "red",
+                            "type": "INTEGER"
+                        }
+                    ]
+                },
+                "description": "",
+                "icon": -1,
+                "package": "",
+                "plugin": "ingescape_class",
+                "uuid": "5c655020-cc25-430f-ab4f-c989164bf640",
+                "version": ""
+            },
+            {
+                "className": "prova_2",
+                "color": 0,
+                "definition": {
+                    "inputs": [
+                        {
+                            "name": "motion_sensor",
+                            "type": "BOOL"
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "green",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "red",
+                            "type": "INTEGER"
+                        }
+                    ]
+                },
+                "description": "",
+                "icon": -1,
+                "package": "",
+                "plugin": "ingescape_class",
+                "uuid": "516583ba-3933-4b3d-ba40-c4aca24702f2",
+                "version": ""
+            },
+            {
+                "className": "prova_3",
+                "color": 0,
+                "definition": {
+                    "inputs": [
+                        {
+                            "name": "motion_sensor",
+                            "type": "BOOL"
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "green",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "red",
+                            "type": "INTEGER"
+                        }
+                    ]
+                },
+                "description": "",
+                "icon": -1,
+                "package": "",
+                "plugin": "ingescape_class",
+                "uuid": "0e61f666-0f89-4fb2-ac7a-52200dda796e",
+                "version": ""
+            }
+        ],
+        "scripts": [
+            {
+                "code": "//\n// Script de test du rover\n//\n// created on 2025-01-03\n//\n\n// The script language documentation is available at\n// https://ingescape.com/verification-validation-using-ingescape/\n\n\"Move Forward and stop\" { \n    sleep 5000\n    \n    rover.move = 100\n    sleep 110\n    rover.move = 100\n    sleep 110\n    rover.move = 100\n    sleep 110\n    rover.move = 100\n    sleep 110\n    rover.move = 100\n    sleep 110\n    rover.move = 100\n    sleep 110\n    rover.move = 100\n    sleep 110\n    rover.move = 100\n    sleep 110\n    rover.move = 100\n    sleep 110\n    rover.move = 100\n    sleep 110\n    rover.move = 80\n    sleep 110\n    rover.move = 80\n    sleep 110\n    rover.move = 80\n    sleep 110\n    rover.move = 80\n    sleep 110\n    rover.move = 80\n    sleep 110\n    rover.move = 80\n    sleep 110\n    rover.move = 80\n    sleep 110\n    rover.move = 80\n    sleep 110\n    rover.move = 80\n    sleep 110\n    rover.move = 80\n    sleep 110\n    rover.move = 40\n    sleep 110\n    rover.move = 40\n    sleep 110\n    rover.move = 40\n    sleep 110\n    rover.move = 40\n    sleep 110\n    rover.move = 40\n    sleep 110\n    rover.move = 40\n    sleep 110\n    rover.move = 40\n    sleep 110\n    rover.move = 40\n    sleep 110\n    rover.move = 40\n    sleep 110\n    rover.move = 40\n    sleep 110\n    rover.move = 0\n    sleep 110\n    rover.move = 0\n    sleep 110\n    rover.move = 0\n    sleep 110\n    rover.move = 0\n    sleep 110\n    rover.move = 0\n    sleep 110\n    rover.move = 0\n    sleep 110\n    rover.move = 0\n    sleep 110\n    rover.move = 0\n    sleep 110\n    rover.move = 0\n    sleep 110\n    rover.move = 0\n    sleep 110\n    rover.move = 0\n    sleep 110\n}\n\n\n\"Move Backward and stop\" { \n    sleep 5000\n    \n    rover.move = -10\n    sleep 110\n    rover.move = -10\n    sleep 110\n    rover.move = -10\n    sleep 110\n    rover.move = -10\n    sleep 110\n    rover.move = -10\n    sleep 110\n    rover.move = -10\n    sleep 110\n    rover.move = -10\n    sleep 110\n    rover.move = -10\n    sleep 110\n    rover.move = -10\n    sleep 110\n    rover.move = -10\n    sleep 110\n    rover.move = -40\n    sleep 110\n    rover.move = -40\n    sleep 110\n    rover.move = -40\n    sleep 110\n    rover.move = -40\n    sleep 110\n    rover.move = -40\n    sleep 110\n    rover.move = -40\n    sleep 110\n    rover.move = -40\n    sleep 110\n    rover.move = -40\n    sleep 110\n    rover.move = -40\n    sleep 110\n    rover.move = -40\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.move = -100\n    sleep 110\n    rover.stop = 0\n}\n\n\"Turn Forward and stop\" { \n    sleep 5000\n    \n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    rover.turn = 45\n    sleep 110\n    rover.move = 50\n    sleep 110\n    rover.move = 50\n    sleep 110\n    rover.move = 50\n    sleep 110\n    rover.move = 50\n    sleep 110\n    rover.move = 50\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.move = 50\n    rover.turn = -45\n    sleep 110\n    rover.stop = 0\n    }\n\n\"Turn Backward and stop\" { \n    sleep 5000\n    \n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    rover.turn = 21\n    sleep 110\n    rover.move = -43\n    sleep 110\n    rover.move = -43\n    sleep 110\n    rover.move = -43\n    sleep 110\n    rover.move = -43\n    sleep 110\n    rover.move = -43\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.move = -43\n    rover.turn = -21\n    sleep 110\n    rover.stop = 0\n}\n\n\n\n\"Turn mast\" { \n    sleep 5000\n    \n    rover.turnMast = 10\n    sleep 110\n    rover.turnMast = 10\n    sleep 110\n    rover.turnMast = 10\n    sleep 110\n    rover.turnMast = 10\n    sleep 110\n    rover.turnMast = 10\n    sleep 110\n    rover.turnMast = 30\n    sleep 110\n    rover.turnMast = 30\n    sleep 110\n    rover.turnMast = 30\n    sleep 110\n    rover.turnMast = 30\n    sleep 110\n    rover.turnMast = 30\n    sleep 110\n    rover.turnMast = 50\n    sleep 110\n    rover.turnMast = 50\n    sleep 110\n    rover.turnMast = 50\n    sleep 110\n    rover.turnMast = 50\n    sleep 110\n    rover.turnMast = 50\n    sleep 110\n    \n    rover.turnMast = 0\n    sleep 110\n    rover.turnMast = 0\n    sleep 110\n    rover.turnMast = 0\n    sleep 110\n    rover.turnMast = 0\n    sleep 110\n    rover.turnMast = 0\n    sleep 110\n    rover.turnMast = -30\n    sleep 110\n    rover.turnMast = -30\n    sleep 110\n    rover.turnMast = -30\n    sleep 110\n    rover.turnMast = -30\n    sleep 110\n    rover.turnMast = -30\n    sleep 110\n    rover.turnMast = -50\n    sleep 110\n    rover.turnMast = -50\n    sleep 110\n    rover.turnMast = -50\n    sleep 110\n    rover.turnMast = -50\n    sleep 110\n    rover.turnMast = -50\n    sleep 110\n    rover.turnMast = 0\n}",
+                "name": "Script de test du rover",
+                "package": "",
+                "uuid": "19789b83-b53c-4dd7-9805-0ceddd526c19"
+            }
+        ],
+        "snippets": [
+            {
+                "code": "// Semaphore logics\nlet inputRun = Igs.createInput(\"mqtt_input_string\", IOValueType.STRING);\nlet outputValue = Igs.createOutput(\"motion_value\", IOValueType.BOOL);\n\n\ninputRun.written.connect(function() {\n\n    log(\"Starting up ------------ \");\n        \n    log(\"Received \" + inputRun.currentValue);\n        \n    log(\"Parse to JSON\")\n\n    const obj = JSON.parse(inputRun.currentValue);\n        \n    log(\"Parsed\")\n        \n    switch (obj.motion) {\n        case true:        \n            log(\"\\\"status motion\\\" is true\");\n            outputValue.write(1);\n            break;\n        case false:\n            log(\"\\\"status motion\\\" is false\");                \n            outputValue.write(0);            \n            break;\n        default:     \n            log(\"Error occurred no correct value given in \\\"status motion\\\"\");\n        }\n});",
+                "name": "TrafficLight logics",
+                "uuid": "c7b2376d-9797-4bfc-98b2-a87605931dfa"
+            },
+            {
+                "code": "// My snippet\nlet inputRun = Igs.createInput(\"in\", IOValueType.BOOL);\nlet outputValue = Igs.createOutput(\"out\", IOValueType.STRING);\n\ninputRun.written.connect(function() {\n    \n    log(\"Satart evaluation of value \" + inputRun.currentValue)\n    \n    \n    if(!inputRun.currentValue){\n        \n        outputValue.write(\"FALSE value\");\n        log(\"FALSE value\");\n        \n    }else {\n        \n        outputValue.write(\"TRUE value\");    \n        log(\"TRUE value\");        \n    }\n    \n    \n});\n",
+                "name": "debugger",
+                "uuid": "ffa27813-f10a-42d4-9ad9-596358806910"
+            }
+        ]
+    },
+    "systemViews": [
+        {
+            "children": [
+                {
+                    "data": {
+                        "entries": [
+                            "true"
+                        ],
+                        "value_type": "BOOL"
+                    },
+                    "height": 79,
+                    "name": "",
+                    "tool": "com.ingescape.circle.tool.writer",
+                    "uuid": "66e01a5b-b9f8-4215-b8e9-29b955903d23",
+                    "width": 256,
+                    "x": -2430.7828228618127,
+                    "y": 45.570064521258246
+                },
+                {
+                    "agent": {
+                        "instances": [
+                            {
+                                "commandLine": "C:\\Users\\AndreaSerino\\AppData\\Local\\Programs\\Python\\Python39\\python.exe C:\\Users\\AndreaSerino\\Documents\\Ingescape\\sandbox\\prova_2\\main.py prova_2 Wi-Fi 5600",
+                                "hostname": "ONE-SYS-ICT-012",
+                                "ip": "192.168.178.65",
+                                "isAttachedToCircle": false,
+                                "mac": "8C:53:E6:C2:FE:2B",
+                                "uuid": "d3c7ebc3-d100-43dc-8326-16307b51bd87"
+                            }
+                        ]
+                    },
+                    "class": "516583ba-3933-4b3d-ba40-c4aca24702f2",
+                    "comment": "",
+                    "height": 122,
+                    "name": "prova_2",
+                    "simulationTime": 5000,
+                    "uuid": "8dca8b80-0e23-41d3-aa1e-37fbf044cfa2",
+                    "width": 250,
+                    "x": -1979.4673836282936,
+                    "y": 138.54533697000522
+                },
+                {
+                    "data": {
+                        "data_decoder": "BINARY",
+                        "msg_type": "",
+                        "proto_file_path": "",
+                        "string_decoder": "PLAIN_TEXT"
+                    },
+                    "height": 112,
+                    "name": "",
+                    "tool": "com.ingescape.circle.tool.observer",
+                    "uuid": "30a34d72-7274-4901-8264-f12ab7c0aab2",
+                    "width": 270,
+                    "x": -1514.0877012760793,
+                    "y": 13.800656560467019
+                },
+                {
+                    "data": {
+                        "data_decoder": "BINARY",
+                        "msg_type": "",
+                        "proto_file_path": "",
+                        "string_decoder": "PLAIN_TEXT"
+                    },
+                    "height": 112,
+                    "name": "",
+                    "tool": "com.ingescape.circle.tool.observer",
+                    "uuid": "ba54af1f-adf0-47c3-a781-f66f27fd027c",
+                    "width": 270,
+                    "x": -1533.5593427317417,
+                    "y": 282.50930864860743
+                }
+            ],
+            "links": {
+                "others": [
+                    {
+                        "destination": "8dca8b80-0e23-41d3-aa1e-37fbf044cfa2",
+                        "destinationIO": {
+                            "name": "motion_sensor",
+                            "type": "INPUT"
+                        },
+                        "source": "66e01a5b-b9f8-4215-b8e9-29b955903d23",
+                        "sourceIO": {
+                            "name": "value",
+                            "type": "OUTPUT"
+                        }
+                    },
+                    {
+                        "destination": "30a34d72-7274-4901-8264-f12ab7c0aab2",
+                        "destinationIO": {
+                            "name": "wildcard",
+                            "type": "INPUT"
+                        },
+                        "source": "8dca8b80-0e23-41d3-aa1e-37fbf044cfa2",
+                        "sourceIO": {
+                            "name": "green",
+                            "type": "OUTPUT"
+                        }
+                    },
+                    {
+                        "destination": "ba54af1f-adf0-47c3-a781-f66f27fd027c",
+                        "destinationIO": {
+                            "name": "wildcard",
+                            "type": "INPUT"
+                        },
+                        "source": "8dca8b80-0e23-41d3-aa1e-37fbf044cfa2",
+                        "sourceIO": {
+                            "name": "red",
+                            "type": "OUTPUT"
+                        }
+                    }
+                ]
+            },
+            "name": "Main view"
+        },
+        {
+            "name": "System view"
+        }
+    ]
+}
