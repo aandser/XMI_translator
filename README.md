@@ -30,3 +30,10 @@ Use the following command in your terminal:
 Example:
 
 `py -3.9 "C:\path\to\main.py" prova_2 Wi-Fi 5600`
+
+
+📌 **Licensing**
+
+This project is shared for reference purposes only. It is not open source.  
+No license is granted for reuse, modification, or distribution.
+
